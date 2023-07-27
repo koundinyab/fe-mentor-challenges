@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'outfit', serif;
+    min-height: 100vh;
+    background-color: hsl(212, 45%, 89%);
+}
+
+div {
+    position: absolute;
+    height: 60%;
+    width: 80%;
+    border-radius: 5%;
+    background-color: hsl(0, 0%, 100%);
+    padding: 0.938rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);   
+}
+
+img {
+    max-width: 100%;
+    border-radius: 0.938rem;
+}
+
+p {
+    font-size: 1.375rem;
+    font-weight: 700;
+    padding: 0.625rem;
+}
+
+p:last-child {
+    font-size: 0.938rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+/* for large screens */
+
+@media screen and (min-width: 376px) {
+    div {
+        width: 35%;    
+    }
+    p {
+        font-size: 1.438rem;
+        text-align: center;
+    }
+    p:last-child {
+        font-size: 1.063rem;
+    }
+}
